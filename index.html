@@ -37,6 +37,15 @@ TemplateMo 578 First Portfolio
 https://templatemo.com/tm-578-first-portfolio
 
 -->
+        <style>
+.clients .clients-image {
+  max-height: 80px;
+  transition: transform 0.3s ease;
+}
+.clients .clients-image:hover {
+  transform: scale(1.05);
+}
+</style>
     </head>
     
     <body>
@@ -279,66 +288,58 @@ https://templatemo.com/tm-578-first-portfolio
                 </div>
             </section> -->
 
-            <section class="clients section-padding">
-              <div class="container">
-                <h3 class="text-center mb-5">Companies I've had worked</h3>
-            
-                <!-- Swiper -->
-                <div class="swiper myClients">
-                  <div class="swiper-wrapper">
-            
-                    <div class="swiper-slide">
-                      <a href="https://hometexindustries.com/">
-                        <img src="images/clients/hometex-logo.png" class="clients-image img-fluid" alt="">
-                      </a>
-                    </div>
-            
-                    <div class="swiper-slide">
-                      <a href="https://bcsl.gov.bd/">
-                        <img src="images/clients/bcsl-logo.png" class="clients-image img-fluid" alt="">
-                      </a>
-                    </div>
-            
-                    <div class="swiper-slide">
-                      <a href="https://www.amcogroup.com.bd/">
-                        <img src="images/clients/amco.png" class="clients-image img-fluid" alt="">
-                      </a>
-                    </div>
-            
-                    <div class="swiper-slide">
-                      <a href="https://babuland.com/">
-                        <img src="images/clients/babuland.png" class="clients-image img-fluid" alt="">
-                      </a>
-                    </div>
-            
-                    <div class="swiper-slide">
-                      <a href="https://oraniva.com/">
-                        <img src="images/clients/oraniva-logo.png" class="clients-image img-fluid" alt="">
-                      </a>
-                    </div>
-            
-                    <div class="swiper-slide">
-                      <a href="https://fleetksa.com/">
-                        <img src="images/clients/fleetksa-logo.png" class="clients-image img-fluid" alt="">
-                      </a>
-                    </div>
-            
-                    <div class="swiper-slide">
-                      <a href="https://learning.somorthon.com/">
-                        <img src="images/clients/somorthon.png" class="clients-image img-fluid" alt="">
-                      </a>
-                    </div>
-            
-                  </div>
-            
-                  <!-- Pagination -->
-                  <div class="swiper-pagination"></div>
-                  <!-- Navigation arrows -->
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-button-prev"></div>
-                </div>
-              </div>
-            </section>
+<section class="clients section-padding">
+  <div class="container">
+    <h3 class="text-center mb-5">Companies I've had worked</h3>
+
+    <div id="clientsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+      <div class="carousel-inner text-center">
+
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center align-items-center flex-wrap gap-4">
+            <a href="https://hometexindustries.com/">
+              <img src="images/clients/hometex-logo.png" class="clients-image img-fluid" alt="">
+            </a>
+            <a href="https://bcsl.gov.bd/">
+              <img src="images/clients/bcsl-logo.png" class="clients-image img-fluid" alt="">
+            </a>
+            <a href="https://www.amcogroup.com.bd/">
+              <img src="images/clients/amco.png" class="clients-image img-fluid" alt="">
+            </a>
+            <a href="https://babuland.com/">
+              <img src="images/clients/babuland.png" class="clients-image img-fluid" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center align-items-center flex-wrap gap-4">
+            <a href="https://oraniva.com/">
+              <img src="images/clients/oraniva-logo.png" class="clients-image img-fluid" alt="">
+            </a>
+            <a href="https://fleetksa.com/">
+              <img src="images/clients/fleetksa-logo.png" class="clients-image img-fluid" alt="">
+            </a>
+            <a href="https://learning.somorthon.com/">
+              <img src="images/clients/somorthon.png" class="clients-image img-fluid" alt="">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#clientsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#clientsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
 
 
 
@@ -824,5 +825,6 @@ https://templatemo.com/tm-578-first-portfolio
 
     </body>
 </html>
+
 
 
